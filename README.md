@@ -1,4 +1,4 @@
-# A peek behind the "link". The web's superpower
+# A peek behind the "link", the web's superpower
 ## The link is born
 If the web is essentially a way of exchange text why is it better than books? In the previous section we hinted that respect to the book, the web has a few additional superpowers.
 

@@ -33,7 +33,7 @@ Anatomy of an HTML tag
 ```html
 <opening tag content-attribute=attribute value>
     Content
-</closing tag>
+</closing tag> <!-- its a closing tag because the tag name begins with a '/'. By the way, this is an HTML comment -->
 ```
 
 In our case, we want to describe a link between two pieces of information. If were to Google [how to define a link with html]()

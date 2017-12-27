@@ -1,6 +1,6 @@
-# A peek behind the "link", the web's superpower
+# A Peek Behind the "Link", the Web's Superpower
 
-## The link is born
+## The Link Is Born
 
 If the web is essentially a way to exchange text, why is it better than books?
 In the previous section we hinted that respect to the book, the web has a few
@@ -17,7 +17,7 @@ A foundational aspect of Tim Bernes Lee's proposal was to organically relate
 without the constraint of a hierarchical structure. This is the insight Tim
 Bernes Lee had while working at CERN and it's one of the key tenets of the web.
 
-## A blueprint for implementing links
+## A Blueprint for Implementing Links
 
 How can text reference other text? Let's daydream and pretend we are designing
 the web and Wikipedia at the same time. We have two independent pieces of

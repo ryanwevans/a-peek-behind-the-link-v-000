@@ -2,7 +2,7 @@
 
 ## The Link Is Born
 
-If the web is essentially a way to exchange text, why is it better than books?
+If the web is essentially a way to exchange text, how is it better than books?
 In the previous section we hinted that respect to the book, the web has a few
 additional superpowers.
 

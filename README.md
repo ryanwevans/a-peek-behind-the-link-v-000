@@ -14,9 +14,8 @@ European Organization for Nuclear Research (CERN).
 
 ## A Blueprint for Implementing Links
 
-How can text reference other text? Let's daydream and pretend we are designing
-the web and Wikipedia at the same time. We have two independent pieces of
-content.
+How can one text reference another text? Let's daydream and figure out the
+components needed so that one document can refer to another.
 
 ```
 Socrates bio
@@ -29,8 +28,7 @@ Plato bio
 Along with his teacher, Socrates (we would like to reference the `Socrates bio` here)...
 ```
 
-How can `Plato's bio` reference `Socrates bio`? What does it mean to reference
-another piece of information?
+How can `Plato's bio` reference `Socrates bio`?
 
 We essentially want to state that a certain piece of information is related to
 another piece of information. We are annotating data with metadata. Metadata is

@@ -73,7 +73,7 @@ that:
 1. Use the `<a>` tag (a type of element) to define a link.
 2. Use the `href` attribute to state where the external data is located.
 
-With these instructions, we can translate our generic tag into an `<a>` tag. 
+With these instructions, we can translate our generic tag into an `<a>` tag.
 
 ```html
 <!-- These are comments  -->
@@ -89,7 +89,7 @@ With these instructions, we can translate our generic tag into an `<a>` tag.
 ```
 
 We just used HTML to build a link and express one of the most fundamental
-features of the web. The ability to relate information to one another. 
+features of the web. The ability to relate information to one another.
 
 This simple pattern applies to all HTML elements.
 

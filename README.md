@@ -38,25 +38,26 @@ data that describes data _metadata_. How could one express the _metadata_ about
 how the _trigger word_ relates to an external resource in a simple `String`?
 Below we'll explore Tim Berners-Lee's approach.
 
-## How Tim Bernes Lee solved the problem
+## How Tim Berners-Lee Solved the Problem
 
-Tim Bernes Lee developed an annotation language named Hypertext Markup Language
-(HTML). This language allows us to annotate (markup in HTML parlance)
-information.
+Tim Berners-Lee developed an annotation language named Hypertext Markup
+Language (HTML).  HTML is a language to create content _as well as_ describe
+the _meaning_ of certain blocks of text by "wrapping" the text in "tags" or
+built-in content classifications (different types of data).  Each tag broadly
+defines the marked-up content. Slight variations between usages of a tag can be
+captured by providing a specific _tag_ with an _attribute_.
 
-HTML is a language to define and describe data. HTML provides a number of
-built-in content classifications (different types of data) which are expressed
-using tags. Each tag broadly defines the marked-up content. Tags then have
-attributes which further describe the specific occurrence of a tag (a type of
-data).
+These terms might seem abstract, but should become clearer with an example.
 
-Anatomy of an HTML tag:
+## Anatomy of an HTML Tag
 
 ```html
 <opening tag content-attribute=attribute value>
     Content
 </closing tag> <!-- its a closing tag because the tag name begins with a '/'. By the way, this is an HTML comment -->
 ```
+
+To return to our question, how do we "link" data in HTML?
 
 In our case, we want to describe a link between two pieces of information. If
 were to Google [how to define a link with html]()
@@ -71,13 +72,19 @@ that:
 
 With these instructions, we can translate our generic tag into an `<a>` tag.
 
+We replace this generic form:
+
 ```html
 <!-- These are comments  -->
 <!-- Generic tag -->
 <opening tag content-attribute=attribute value>
     Content
 </closing tag>
+```
 
+with:
+
+```html
 <!-- Actual link tag -->
 <a href='https://en.wikipedia.org/wiki/Socrates'>
     Socrates

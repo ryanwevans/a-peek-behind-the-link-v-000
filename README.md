@@ -9,8 +9,7 @@ we might miss how special it is. On the Web, HTML documents can organically
 relate (link) to one another, allowing pieces of information to reference one
 another without the constraint of a hierarchical structure.
 
-This idea was discovered by [Tim Bernes
-Lee](https://en.wikipedia.org/wiki/Tim_Berners-Lee) while he was working at
+This idea was discovered by [Tim Berners-Lee][TBL] while he was working at
 European Organization for Nuclear Research (CERN).
 
 ## A Blueprint for Implementing Links
@@ -96,3 +95,5 @@ This simple pattern applies to all HTML elements.
 
 1. Tags classify the type of data
 2. Attributes describe the specific occurrence of an HTML element
+
+[TBL]: https://en.wikipedia.org/wiki/Tim_Berners-Lee

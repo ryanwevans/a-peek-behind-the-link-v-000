@@ -30,15 +30,13 @@ Along with his teacher, Socrates (we would like to reference the `Socrates bio` 
 
 How can `Plato's bio` reference `Socrates bio`?
 
-We essentially want to state that a certain piece of information is related to
-another piece of information. We are annotating data with metadata. Metadata is
-data which describes other data. If my driver license is a piece of data the
-fact that it's released by the state of New York is metadata about my license,
-it provides information about my license.
+1. We need an "address" for `Socrates bio`
+2. We need to have a word or idea suggest "Socrates", a "trigger."
 
-Our annotation should state that the annotated data references external data
-(it’s a  `link`) and that this specific occurrence of a `link` points to a
-specific occurrence of information.
+This information is _data about the data_ in the document. Technologists call
+data that describes data _metadata_. How could one express the _metadata_ about
+how the _trigger word_ relates to an external resource in a simple `String`?
+Below we'll explore Tim Berners-Lee's approach.
 
 ## How Tim Bernes Lee solved the problem
 

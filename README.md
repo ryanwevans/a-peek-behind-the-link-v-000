@@ -3,19 +3,15 @@
 ## The Link Is Born
 
 If the web is essentially a way to exchange text, how is it better than books?
-In the previous section we hinted that respect to the book, the web has a few
-additional superpowers.
+In addition to being freely accessible and distributable for virtually no cost,
+texts created on the web can refer to one another, a process that's so common
+we might miss how special it is. On the Web, HTML documents can organically
+relate (link) to one another, allowing pieces of information to reference one
+another without the constraint of a hierarchical structure.
 
-While working at European Organization for Nuclear Research (CERN), [Tim Bernes
-Lee](https://en.wikipedia.org/wiki/Tim_Berners-Lee) submitted a proposal to
-improve how CERN organized its vast amount of information. Tim Bernes Lee also
-noted that his proposal could be used by others since they would soon face
-similar challenges.
-
-A foundational aspect of Tim Bernes Lee's proposal was to organically relate
-(link) information, allowing each piece of information to reference one another
-without the constraint of a hierarchical structure. This is the insight Tim
-Bernes Lee had while working at CERN and it's one of the key tenets of the web.
+This idea was discovered by [Tim Bernes
+Lee](https://en.wikipedia.org/wiki/Tim_Berners-Lee) while he was working at
+European Organization for Nuclear Research (CERN).
 
 ## A Blueprint for Implementing Links
 

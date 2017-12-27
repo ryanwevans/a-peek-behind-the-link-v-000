@@ -1,5 +1,7 @@
 # A peek behind the "link", the web's superpower
+
 ## The link is born
+
 If the web is essentially a way to exchange text, why is it better than books? In the previous section we hinted that respect to the book, the web has a few additional superpowers.
 
 While working at European Organization for Nuclear Research (CERN), [Tim Bernes Lee](https://en.wikipedia.org/wiki/Tim_Berners-Lee) submitted a proposal to improve how CERN organized its vast amount of information. Tim Bernes Lee also noted that his proposal could be used by others since they would soon face similar challenges.
@@ -7,6 +9,7 @@ While working at European Organization for Nuclear Research (CERN), [Tim Bernes 
 A foundational aspect of Tim Bernes Lee's proposal was to organically relate (link) information, allowing each piece of information to reference one another without the constraint of a hierarchical structure. This is the insight Tim Bernes Lee had while working at CERN and it's one of the key tenets of the web.
 
 ## A blueprint for implementing links
+
 How can text reference other text? Let's daydream and pretend we are designing the web and Wikipedia at the same time. We have two independent pieces of content.
 
 ```
@@ -25,6 +28,7 @@ We essentially want to state that a certain piece of information is related to a
 Our annotation should state that the annotated data references external data (it’s a  `link`) and that this specific occurrence of a `link` points to a specific occurrence of information.
 
 ## How Tim Bernes Lee solved the problem
+
 Tim Bernes Lee developed an annotation language named Hypertext Markup Language (HTML). This language allows us to annotate (markup in HTML parlance) information.
 
 HTML is a language to define and describe data. HTML provides a number of built-in content classifications (different types of data) which are expressed using tags. Each tag broadly defines the marked-up content. Tags then have attributes which further describe the specific occurrence of a tag (a type of data).

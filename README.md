@@ -76,8 +76,8 @@ were to Google [how to define a link with html]()
 
 Google provides a good start. From the top result snippet, we learn that:
 
-1. Use the `<a>` tag (a type of element) to define a link.
-2. Use the `href` attribute to state where the external data is located.
+1. Use the `<a>` **tag** (a type of element) to define a link
+2. Use the `href` **attribute** to state where the external data is located
 
 With these instructions, we can translate our generic tag into an `<a>` tag.
 

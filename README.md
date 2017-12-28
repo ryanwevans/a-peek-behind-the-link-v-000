@@ -34,7 +34,7 @@ Along with his teacher, Socrates (we would like to reference the `Socrates bio` 
 
 How can `Plato's bio` reference `Socrates bio`?
 
-1. We need an "address" for `Socrates bio`
+1. We need an "address" for the `Socrates bio` document
 2. We need to have a word or idea suggest "Socrates", a "trigger."
 
 This information is _data about the data_ in the document. Technologists call

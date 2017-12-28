@@ -108,5 +108,14 @@ This simple pattern applies to all HTML elements.
 1. Tags classify the type of data
 2. Attributes describe the specific occurrence of an HTML element
 
+Referring back to our original "Socrates" example.
+
+1. Universal addresses are called URL (Uniform Resource Locator). We specify
+   the pointed-to resource's address (URL) in an attribute called the `href`
+   within the markup tag `<a>`
+2. `<a>` "wraps" the "trigger" word "Socrates" and denotes the ending of the
+   "wrapping" with its closing tag `</a>`.
+
+
 [TBL]: https://en.wikipedia.org/wiki/Tim_Berners-Lee
 [search-result]: https://curriculum-content.s3.amazonaws.com/web-development/how-to-define-a-link-with-html.jpeg

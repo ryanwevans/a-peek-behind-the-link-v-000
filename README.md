@@ -74,8 +74,7 @@ were to Google [how to define a link with html]()
 
 ![Google search result for "How to define a link with HTML][search-result]
 
-Google did a great job with this query. From the top result snippet, we learn
-that:
+Google provides a good start. From the top result snippet, we learn that:
 
 1. Use the `<a>` tag (a type of element) to define a link.
 2. Use the `href` attribute to state where the external data is located.

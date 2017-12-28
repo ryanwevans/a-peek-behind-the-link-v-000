@@ -72,7 +72,7 @@ To return to our question, how do we "link" data in HTML?
 In our case, we want to describe a link between two pieces of information. If
 were to Google [how to define a link with html]()
 
-![](https://curriculum-content.s3.amazonaws.com/web-development/how-to-define-a-link-with-html.jpeg)
+![Google search result for "How to define a link with HTML][search-result]
 
 Google did a great job with this query. From the top result snippet, we learn
 that:
@@ -110,3 +110,4 @@ This simple pattern applies to all HTML elements.
 2. Attributes describe the specific occurrence of an HTML element
 
 [TBL]: https://en.wikipedia.org/wiki/Tim_Berners-Lee
+[search-result]: https://curriculum-content.s3.amazonaws.com/web-development/how-to-define-a-link-with-html.jpeg

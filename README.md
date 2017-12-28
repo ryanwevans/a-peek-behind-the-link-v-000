@@ -37,21 +37,27 @@ How can `Plato's bio` reference `Socrates bio`?
 1. We need an "address" for the `Socrates bio` document
 2. We need to have a word or idea suggest "Socrates", a "trigger."
 
-This information is _data about the data_ in the document. Technologists call
-data that describes data _metadata_. How could one express the _metadata_ about
-how the _trigger word_ relates to an external resource in a simple `String`?
-Below we'll explore Tim Berners-Lee's approach.
+To achieve these two goals we need to _describe_ the data in the document using
+the _same_ technology ("text") that makes up the document. We need to provide
+"metadata" &mdash; data about data.  Below we'll explore Tim Berners-Lee's
+approach.
 
 ## How Tim Berners-Lee Solved the Problem
 
 Tim Berners-Lee developed an annotation language named Hypertext Markup
 Language (HTML).  HTML is a language to create content _as well as_ describe
-the _meaning_ of certain blocks of text by "wrapping" the text in "tags" or
-built-in content classifications (different types of data).  Each tag broadly
-defines the marked-up content. Slight variations between usages of a tag can be
-captured by providing a specific _tag_ with an _attribute_.
+the _meaning_ of certain blocks of text.
 
+"Meaning" is denoted by "wrapping" the text in "tags" or built-in content
+classifications.  Each tag broadly defines the marked-up content. Slight
+variations between usages of a tag can be captured by providing a specific
 These terms might seem abstract, but should become clearer with an example.
+_tag_ with an _attribute_. For example, we could imagine a tag called
+`<telephone>` which has attribute `location="work"` or `location="mobile"` and
+which wraps content like `(415)555-1212`.
+
+Let's move _back_ from the specific to the abstract and take a look at the
+generalized format of an HTML tag.
 
 ## Anatomy of an HTML Tag
 

@@ -1,50 +1,87 @@
-# A peek behind the "link", the web's superpower
-## The link is born
-If the web is essentially a way to exchange text, why is it better than books? In the previous section we hinted that respect to the book, the web has a few additional superpowers.
+# A Peek Behind the "Link", the Web's Superpower
 
-While working at European Organization for Nuclear Research (CERN), [Tim Bernes Lee](https://en.wikipedia.org/wiki/Tim_Berners-Lee) submitted a proposal to improve how CERN organized its vast amount of information. Tim Bernes Lee also noted that his proposal could be used by others since they would soon face similar challenges.
+## The Link Is Born
 
-A foundational aspect of Tim Bernes Lee's proposal was to organically relate (link) information, allowing each piece of information to reference one another without the constraint of a hierarchical structure. This is the insight Tim Bernes Lee had while working at CERN and it's one of the key tenets of the web.
+If the web is essentially a way to exchange text, how is it better than books?
+In addition to being freely accessible and distributable for virtually no cost,
+texts created on the web can refer to one another, a process that's so common
+we might miss how special it is. On the Web, HTML documents can organically
+relate (link) to one another, allowing pieces of information to reference one
+another without the constraint of a hierarchical structure.
 
-## A blueprint for implementing links
-How can text reference other text? Let's daydream and pretend we are designing the web and Wikipedia at the same time. We have two independent pieces of content.
+This idea was discovered by [Tim Berners-Lee][TBL] while he was working at
+European Organization for Nuclear Research (CERN).
+
+## A Blueprint for Implementing Links
+
+How can one text reference another text? Let's daydream and figure out the
+components needed so that one document can refer to another.
 
 ```
 Socrates bio
-Socrates was a classical Greek philosopher credited as one of the founders of Western philosophy and is known as the first moral philosopher...
 
+Socrates was a classical Greek philosopher credited as one of the founders of
+Western philosophy and is known as the first moral philosopher...
+```
+
+And...
+
+```
 Plato bio
 ...
 Along with his teacher, Socrates (we would like to reference the `Socrates bio` here)...
 ```
 
-How can `Plato's bio` reference `Socrates bio`? What does it mean to reference another piece of information?
+How can `Plato's bio` reference `Socrates bio`?
 
-We essentially want to state that a certain piece of information is related to another piece of information. We are annotating data with metadata. Metadata is data which describes other data. If my driver license is a piece of data the fact that it's released by the state of New York is metadata about my license, it provides information about my license.
+1. We need an "address" for the `Socrates bio` document
+2. We need to have a word or idea suggest "Socrates", a "trigger."
 
-Our annotation should state that the annotated data references external data (it’s a  `link`) and that this specific occurrence of a `link` points to a specific occurrence of information.
+To achieve these two goals we need to _describe_ the data in the document using
+the _same_ technology ("text") that makes up the document. We need to provide
+"metadata" &mdash; data about data.  Below we'll explore Tim Berners-Lee's
+approach.
 
-## How Tim Bernes Lee solved the problem
-Tim Bernes Lee developed an annotation language named Hypertext Markup Language (HTML). This language allows us to annotate (markup in HTML parlance) information.
+## How Tim Berners-Lee Solved the Problem
 
-HTML is a language to define and describe data. HTML provides a number of built-in content classifications (different types of data) which are expressed using tags. Each tag broadly defines the marked-up content. Tags then have attributes which further describe the specific occurrence of a tag (a type of data).
+Tim Berners-Lee developed an annotation language named Hypertext Markup
+Language (HTML).  HTML is a language to create content _as well as_ describe
+the _meaning_ of certain blocks of text.
 
-Anatomy of an HTML tag
+"Meaning" is denoted by "wrapping" the text in "tags" or built-in content
+classifications.  Each tag broadly defines the marked-up content. Slight
+variations between usages of a tag can be captured by providing a specific
+These terms might seem abstract, but should become clearer with an example.
+_tag_ with an _attribute_. For example, we could imagine a tag called
+`<telephone>` which has attribute `location="work"` or `location="mobile"` and
+which wraps content like `(415)555-1212`.
+
+Let's move _back_ from the specific to the abstract and take a look at the
+generalized format of an HTML tag.
+
+## Anatomy of an HTML Tag
+
 ```html
 <opening tag content-attribute=attribute value>
     Content
 </closing tag> <!-- its a closing tag because the tag name begins with a '/'. By the way, this is an HTML comment -->
 ```
 
-In our case, we want to describe a link between two pieces of information. If were to Google [how to define a link with html]()
-![](https://curriculum-content.s3.amazonaws.com/web-development/how-to-define-a-link-with-html.jpeg)
+To return to our question, how do we "link" data in HTML?
 
-Google did a great job with this query. From the top result snippet, we learn that:
+In our case, we want to describe a link between two pieces of information. If
+were to Google [how to define a link with html]()
 
-1. Use the `<a>` tag (a type of element) to define a link.
-2. Use the `href` attribute to state where the external data is located.
+![Google search result for "How to define a link with HTML][search-result]
 
-With these instructions, we can translate our generic tag into an `<a>` tag. 
+Google provides a good start. From the top result snippet, we learn that:
+
+1. Use the `<a>` **tag** (a type of element) to define a link
+2. Use the `href` **attribute** to state where the external data is located
+
+With these instructions, we can translate our generic tag into an `<a>` tag.
+
+We replace this generic form:
 
 ```html
 <!-- These are comments  -->
@@ -52,16 +89,37 @@ With these instructions, we can translate our generic tag into an `<a>` tag.
 <opening tag content-attribute=attribute value>
     Content
 </closing tag>
+```
 
+with:
+
+```html
 <!-- Actual link tag -->
 <a href='https://en.wikipedia.org/wiki/Socrates'>
     Socrates
 </a>
 ```
 
-We just used HTML to build a link and express one of the most fundamental features of the web. The ability to relate information to one another. 
+We just used HTML to build a link and express one of the most fundamental
+features of the web. The ability to relate information to one another.
 
 This simple pattern applies to all HTML elements.
 
 1. Tags classify the type of data
 2. Attributes describe the specific occurrence of an HTML element
+
+Referring back to our original "Socrates" example.
+
+1. Universal addresses are called URL (Uniform Resource Locator). We specify
+   the pointed-to resource's address (URL) in an attribute called the `href`
+   within the markup tag `<a>`
+2. `<a>` "wraps" the "trigger" word "Socrates" and denotes the ending of the
+   "wrapping" with its closing tag `</a>`.
+
+We'll explore actually writing tags more in subsequent sections, so if you feel
+like you need more practice we'll be revisiting and reviewing these concepts in
+fine detail in the next section.
+
+
+[TBL]: https://en.wikipedia.org/wiki/Tim_Berners-Lee
+[search-result]: https://curriculum-content.s3.amazonaws.com/web-development/how-to-define-a-link-with-html.jpeg

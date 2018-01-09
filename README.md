@@ -48,13 +48,13 @@ Tim Berners-Lee developed an annotation language named Hypertext Markup
 Language (HTML).  HTML is a language to create content _as well as_ describe
 the _meaning_ of certain blocks of text.
 
-"Meaning" is denoted by "wrapping" the text in "tags" or built-in content
-classifications.  Each tag broadly defines the marked-up content. Slight
-variations between usages of a tag can be captured by providing a specific
-These terms might seem abstract, but should become clearer with an example.
-_tag_ with an _attribute_. For example, we could imagine a tag called
-`<telephone>` which has attribute `location="work"` or `location="mobile"` and
-which wraps content like `(415)555-1212`.
+"Meaning" is denoted by "wrapping" the text in "tags" or built-in content 
+classifications. Each tag broadly defines the marked-up content. Slight 
+variations between usages of a tag can be captured by providing a specific 
+_tag_ with an _attribute_. These terms might seem abstract, but should become 
+clearer with an example. We could imagine a tag called `<telephone>` which has 
+attribute `location="work"` or `location="mobile"` and which wraps content like 
+`(415)555-1212`.
 
 Let's move _back_ from the specific to the abstract and take a look at the
 generalized format of an HTML tag.

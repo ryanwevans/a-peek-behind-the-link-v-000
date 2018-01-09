@@ -116,9 +116,9 @@ Referring back to our original "Socrates" example.
 2. `<a>` "wraps" the "trigger" word "Socrates" and denotes the ending of the
    "wrapping" with its closing tag `</a>`.
 
-We'll explore actually writing tags more in subsequent sections, so if you feel
+**We'll explore actually writing tags more in subsequent sections, so if you feel
 like you need more practice we'll be revisiting and reviewing these concepts in
-fine detail in the next section.
+fine detail in the next section**.
 
 
 [TBL]: https://en.wikipedia.org/wiki/Tim_Berners-Lee

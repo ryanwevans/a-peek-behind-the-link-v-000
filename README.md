@@ -70,7 +70,7 @@ generalized format of an HTML tag.
 To return to our question, how do we "link" data in HTML?
 
 In our case, we want to describe a link between two pieces of information, Socrates' and Plato's bios. If
-were to Google [how to define a link with html]()
+we were to Google [how to define a link with html]()
 
 ![Google search result for "How to define a link with HTML][search-result]
 

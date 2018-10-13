@@ -62,9 +62,9 @@ generalized format of an HTML tag.
 ## Anatomy of an HTML Tag
 
 ```html
-<opening tag content-attribute=attribute value>
+<opening-tag content-attribute=attribute-value>
     Content
-</closing tag> <!-- its a closing tag because the tag name begins with a '/'. By the way, this is an HTML comment -->
+</closing-tag> <!-- its a closing tag because the tag name begins with a '/'. By the way, this is an HTML comment -->
 ```
 
 To return to our question, how do we "link" data in HTML?
